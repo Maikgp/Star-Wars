@@ -1,3 +1,9 @@
 /* 
     General Styles
 */
+body {
+    background-image: url("../img/Anakin.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+
+}

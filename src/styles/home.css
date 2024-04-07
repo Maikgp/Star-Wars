@@ -1,0 +1,93 @@
+.carrusel {
+    overflow-x: scroll;
+    display: flex;
+    scrollbar-color: #ffffff rgba(0, 0, 0, 0.5); /* Color de la barra y fondo de la barra respectivamente */
+    scrollbar-width: thin; /* Grosor de la barra de desplazamiento */
+}
+
+.carrusel::-webkit-scrollbar {
+    width: 8px; /* Grosor de la barra de desplazamiento en navegadores webkit */
+}
+
+.carrusel::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo de la barra de desplazamiento */
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color de la barra de desplazamiento */
+    border-radius: 4px; /* Borde redondeado de la barra de desplazamiento */
+}
+.card-body {
+    margin: 0;
+    padding: 0;
+    height: min-content;
+    
+    
+}
+.card-body p {
+    margin-top: 0; /* Eliminar margen superior */
+    margin-bottom: 0; /* Eliminar margen inferior */
+}
+.card-img-top{
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+    aspect-ratio:2/3;
+    border-radius: 4px;
+    
+}
+.card-img-top-planets{
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+    aspect-ratio:1;
+    border-radius: 4px;
+    
+}
+.card {
+    /* height: 400px; */
+    
+}
+.container{
+    /* margin-bottom: -14px */
+}
+.heart-favorite {
+    color: red; /* Cambiar el color del corazón cuando esté en favoritos */
+}
+
+.heart-not-favorite {
+    color: rgb(255, 255, 255); /* Cambiar el color del corazón cuando no esté en favoritos */
+}
+.btn-outline-custom {
+    background-color: transparent; 
+    color: rgb(255, 255, 255);
+    border: 0.5px solid rgb(255, 255, 255); 
+    font-family: "Star Jedi"; 
+    padding: 0.5rem 2rem; 
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+    
+}
+
+.btn-outline-custom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 23, 231, 0.89);
+    transition: left 0.2s ease; 
+    z-index: 1; 
+}
+
+.btn-outline-custom:hover::before {
+    left: 100%; /* Mover de izquierda a derecha */
+}
+.btn-outline-custom:hover {
+    color: rgb(201, 188, 18); /* Mantener el texto blanco en :hover */
+}
+
+
+
